@@ -103,7 +103,7 @@ v-指令绑定的值可以使用 JavaScript 表达式:eg.
 <meta property="og:image" content="http://oimy29npf.bkt.clouddn.com/vue1.png">
 <meta property="og:image" content="http://oimy29npf.bkt.clouddn.com/vue2.png">
 <meta property="og:image" content="http://oimy29npf.bkt.clouddn.com/vue3.png">
-<meta property="og:updated_time" content="2016-12-23T12:28:03.000Z">
+<meta property="og:updated_time" content="2016-12-23T14:20:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue.js 清单(二)">
 <meta name="twitter:description" content="模板语法
@@ -248,16 +248,6 @@ v-指令绑定的值可以使用 JavaScript 表达式:eg.
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404.html" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
-            
-            公益404
-          </a>
-        </li>
-      
 
       
     </ul>
@@ -391,6 +381,7 @@ v-指令绑定的值可以使用 JavaScript 表达式:eg.
 <li>v-指令绑定的值可以使用 JavaScript 表达式:<br>eg.   </li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123; &#123; number + 1 &#125; &#125;</div><div class="line">&#123; &#123; message.split(&apos;&apos;).reverse().join(&apos;&apos;) &#125; &#125;</div><div class="line">&lt;div v-bind:id=&quot;&apos;list-&apos; + id&quot;&gt;&lt;/div&gt;</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>但有个限制就是，每个绑定都只能包含单个表达式(除了 v-for)，所以下面的例子都不会生效。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 这是语句，不是表达式 --&gt;</div><div class="line">&#123; &#123; var a = 1 &#125; &#125;</div><div class="line">&lt;!-- 流控制也不会生效，请使用三元表达式 --&gt;</div><div class="line">&#123; &#123; if (ok) &#123; return message &#125; &#125; &#125;</div></pre></td></tr></table></figure>
 <ol>
@@ -470,6 +461,10 @@ v-指令绑定的值可以使用 JavaScript 表达式:eg.
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/23/Vue-js-清单-三/" rel="prev" title="Vue.js 清单(三)">
+                Vue.js 清单(三) <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -560,7 +555,7 @@ v-指令绑定的值可以使用 JavaScript 表达式:eg.
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -568,7 +563,7 @@ v-指令绑定的值可以使用 JavaScript 表达式:eg.
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -577,7 +572,7 @@ v-指令绑定的值可以使用 JavaScript 表达式:eg.
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

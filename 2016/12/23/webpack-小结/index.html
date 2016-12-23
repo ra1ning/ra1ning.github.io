@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="git," />
+  <meta name="keywords" content="webpack," />
 
 
 
@@ -84,37 +84,36 @@
 
 
 
-<meta name="description" content="添加文件到Git仓库
-使用命令git add ，注意，可反复多次使用，添加多个文件；
-使用命令git commit，完成。
+<meta name="description" content="webpack小结
+webpack多入口文件配置
 
-git常用命令
-pwd-Print Working Directory
-HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset –hard commit_id。
-穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本">
+
+webpack-dev-server配置及使用（本地服务器html文件引用资源文件与本地应用时的路径区别）
+webpack第三方静态库集合打包，当有多个入口引用了同一资源，各入口打包后的文件都会包含这一资源，用以下插件方法去重复资源：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git常用命令">
-<meta property="og:url" content="https://ra1ning.github.io/2016/12/23/git常用命令/index.html">
+<meta property="og:title" content="webpack 小结">
+<meta property="og:url" content="https://ra1ning.github.io/2016/12/23/webpack-小结/index.html">
 <meta property="og:site_name" content="Else's Blog">
-<meta property="og:description" content="添加文件到Git仓库
-使用命令git add ，注意，可反复多次使用，添加多个文件；
-使用命令git commit，完成。
+<meta property="og:description" content="webpack小结
+webpack多入口文件配置
 
-git常用命令
-pwd-Print Working Directory
-HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset –hard commit_id。
-穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本">
-<meta property="og:updated_time" content="2016-12-23T13:24:20.000Z">
+
+webpack-dev-server配置及使用（本地服务器html文件引用资源文件与本地应用时的路径区别）
+webpack第三方静态库集合打包，当有多个入口引用了同一资源，各入口打包后的文件都会包含这一资源，用以下插件方法去重复资源：">
+<meta property="og:image" content="http://oimy29npf.bkt.clouddn.com/webpack1.png">
+<meta property="og:image" content="http://oimy29npf.bkt.clouddn.com/webpack2.png">
+<meta property="og:image" content="http://oimy29npf.bkt.clouddn.com/webpack3.png">
+<meta property="og:image" content="http://oimy29npf.bkt.clouddn.com/webpack4.png">
+<meta property="og:updated_time" content="2016-12-23T14:20:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git常用命令">
-<meta name="twitter:description" content="添加文件到Git仓库
-使用命令git add ，注意，可反复多次使用，添加多个文件；
-使用命令git commit，完成。
+<meta name="twitter:title" content="webpack 小结">
+<meta name="twitter:description" content="webpack小结
+webpack多入口文件配置
 
-git常用命令
-pwd-Print Working Directory
-HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset –hard commit_id。
-穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本">
+
+webpack-dev-server配置及使用（本地服务器html文件引用资源文件与本地应用时的路径区别）
+webpack第三方静态库集合打包，当有多个入口引用了同一资源，各入口打包后的文件都会包含这一资源，用以下插件方法去重复资源：">
+<meta name="twitter:image" content="http://oimy29npf.bkt.clouddn.com/webpack1.png">
 
 
 
@@ -142,13 +141,13 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 
 
 
-  <link rel="canonical" href="https://ra1ning.github.io/2016/12/23/git常用命令/"/>
+  <link rel="canonical" href="https://ra1ning.github.io/2016/12/23/webpack-小结/"/>
 
 
 
 
 
-  <title> git常用命令 | Else's Blog </title>
+  <title> webpack 小结 | Else's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -279,7 +278,7 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://ra1ning.github.io/2016/12/23/git常用命令/">
+  <link itemprop="mainEntityOfPage" href="https://ra1ning.github.io/2016/12/23/webpack-小结/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Else">
@@ -303,7 +302,7 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
             
             
               
-                git常用命令
+                webpack 小结
               
             
           </h1>
@@ -316,7 +315,7 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-23T19:53:50+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-23T22:01:02+08:00">
                 2016-12-23
               </time>
             
@@ -335,8 +334,8 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index">
-                    <span itemprop="name">git</span>
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
                   </a>
                 </span>
 
@@ -350,8 +349,8 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/12/23/git常用命令/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/23/git常用命令/" itemprop="commentCount"></span>
+                <a href="/2016/12/23/webpack-小结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/23/webpack-小结/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -377,30 +376,36 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
       
 
       
-        <h2 id="添加文件到Git仓库"><a href="#添加文件到Git仓库" class="headerlink" title="添加文件到Git仓库"></a>添加文件到Git仓库</h2><ol>
-<li>使用命令git add <file>，注意，可反复多次使用，添加多个文件；</file></li>
-<li>使用命令git commit，完成。</li>
-</ol>
-<h2 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h2><ul>
-<li>pwd-Print Working Directory</li>
-<li>HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset –hard commit_id。</li>
-<li>穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。</li>
-<li>要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。</li>
-<li>git reset –hard HEAD^  回退到上一个版本库</li>
-<li>git diff 用来比较工作区保存内容与缓存区内容之间的差异</li>
-<li>git checkout —filename 将工作区内容回退到与最近最近记录暂存区相同</li>
-<li>git reset HEAD file可以把暂存区的修改撤销掉（unstage），并重新放回工作区</li>
-<li>查看分支：git branch</li>
-<li>创建分支：git branch <name></name></li>
-<li>切换分支：git checkout <name></name></li>
-<li>创建+切换分支：git checkout -b <name></name></li>
-<li>合并某分支到当前分支：git merge <name></name></li>
-<li>删除分支：git branch -d <name></name></li>
+        <h1 id="webpack小结"><a href="#webpack小结" class="headerlink" title="webpack小结"></a>webpack小结</h1><ul>
+<li>webpack多入口文件配置</li>
 </ul>
-<h2 id="将本地文件推送到-github"><a href="#将本地文件推送到-github" class="headerlink" title="将本地文件推送到 github"></a>将本地文件推送到 github</h2><ol>
-<li>git remote add origin git@github.com:michaelliao/<dirname>.git</dirname></li>
-<li>git push -u origin master<br>#参数u将本地仓库与远程建立关联之后推送文件到项目只需使用 ++git push -u origin master++</li>
-</ol>
+<ul>
+<li>webpack-dev-server配置及使用（本地服务器html文件引用资源文件与本地应用时的路径区别）</li>
+<li>webpack第三方静态库集合打包，当有多个入口引用了同一资源，各入口打包后的文件都会包含这一资源，用以下插件方法去重复资源：<br><img src="http://oimy29npf.bkt.clouddn.com/webpack1.png" alt=""></li>
+</ul>
+<a id="more"></a>
+<ul>
+<li>require ensure 代码分割，以便异步按需加载 <blockquote>
+<p><a href="https://segmentfault.com/a/1190000003499526" target="_blank" rel="external">基于web pack搭建前端工程解决方案探索 - dmyang - SegmentFault</a>  </p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">if(判断加载AB.js的条件(按需加载AB.js))&#123;</div><div class="line">	require ensure([‘moduleA’,’moduleB’],function()&#123;</div><div class="line">			//moduleA和moduleB会被打包为一个文件AB.js，</div><div class="line">			var A=require(&apos;moduleA&apos;);</div><div class="line">			var B=require(&apos;moduleB&apos;);</div><div class="line">			//use A or B</div><div class="line">	&#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>webpack  loader配置及使用</li>
+</ul>
+<ul>
+<li>webpack  插件使用及配置</li>
+</ul>
+<h1 id="webpack中容易犯的错误"><a href="#webpack中容易犯的错误" class="headerlink" title="webpack中容易犯的错误"></a>webpack中容易犯的错误</h1><p>一个入口文件不能依赖另一个入口文件<br><img src="http://oimy29npf.bkt.clouddn.com/webpack2.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">var webpack = require(&apos;webpack&apos;);</div><div class="line"></div><div class="line">module.exports=&#123;</div><div class="line">	entry: &#123;</div><div class="line">        page1: __dirname + &quot;/src/main.js&quot;,</div><div class="line">        page2: __dirname + &quot;/src/index.js&quot;,</div><div class="line">        // page3: __dirname + &quot;/src/king.js&quot;,</div><div class="line">        </div><div class="line">        //支持数组形式，将加载数组中的所有模块，但以最后一个模块作为输出</div><div class="line">        vendor: [&quot;jquery&quot;,&quot;zepto&quot;,&quot;lodash&quot;]</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    output: &#123;</div><div class="line">    		path: __dirname + &quot;/dest&quot;,</div><div class="line">			filename: &quot;[name].bundle.js&quot;,</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    plugins:[</div><div class="line">    		new webpack.optimize.CommonsChunkPlugin(&#123;</div><div class="line">				name: &quot;vendor&quot;, </div><div class="line">		//将vendor中的模块提取到公共代码中，</div><div class="line">		// name:[&quot;vendor&quot;,&quot;runtime&quot;],可以提取出webpack运行时，</div><div class="line">		// 	避免每次修改业务代码时影响库代码</div><div class="line"></div><div class="line">/*  </div><div class="line">	1. 若不使用webpack.optimize.CommonsChunkPlugin插件，则其</div><div class="line">他引用过vendor中模块的chunk会将自身用到的vendor中的模块再打包一次，造成</div><div class="line">代码冗余，浪费带宽；</div><div class="line">	2. 将commonsChunk的name指定为vendor，可以保证vendor中的模</div><div class="line">块提取到commonsChunk中（即使vendor中的模块并未被共用），vendor中放置</div><div class="line">第三方代码库，第三方库一般不会改动，再配合minChunks:Infinity，可以保证</div><div class="line">vendor中只有第三方库，避免引入其他模块（若未使用Infinity，可能混入其他</div><div class="line">共用过的经常会修改的业务模块，影响vendor在客户端的缓存）</div><div class="line">*/</div><div class="line"></div><div class="line">				minChunks:Infinity,  </div><div class="line">				//⚠️mimChunk默认值为chunk数量</div><div class="line">			&#125;)</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><img src="http://oimy29npf.bkt.clouddn.com/webpack3.png" alt=""></p>
+<p><a href="http://webpack.github.io/docs/list-of-plugins.html#provideplugin" target="_blank" rel="external">list of plugins</a></p>
+<ul>
+<li>ProvidePlugin<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">new webpack.ProvidePlugin(&#123;</div><div class="line">    $:&quot;jquery&quot;,</div><div class="line">    jQuery:&quot;jquery&quot;,</div><div class="line">    &quot;window.jQuery&quot;:&quot;jquery&quot;</div><div class="line">&#125;),</div><div class="line">//这个可以使jquery变成全局变量，不用在自己文件require(&apos;jquery’)了,模块中可以直接使用</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="http://oimy29npf.bkt.clouddn.com/webpack4.png" alt=""></p>
 
       
     </div>
@@ -445,7 +450,7 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag"># git</a>
+            <a href="/tags/webpack/" rel="tag"># webpack</a>
           
         </div>
       
@@ -454,14 +459,18 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/12/23/Vue-js-清单-三/" rel="next" title="Vue.js 清单(三)">
+                <i class="fa fa-chevron-left"></i> Vue.js 清单(三)
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/12/23/Vue-js-清单-一/" rel="prev" title="Vue.js 清单(一)">
-                Vue.js 清单(一) <i class="fa fa-chevron-right"></i>
+              <a href="/2016/12/23/jquery-兼容-commonjs/" rel="prev" title=" jquery 兼容 commonjs">
+                 jquery 兼容 commonjs <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -477,10 +486,10 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/12/23/git常用命令/"
-     data-title="git常用命令"
+        <div class="ds-share flat" data-thread-key="2016/12/23/webpack-小结/"
+     data-title="webpack 小结"
      data-content=""
-     data-url="https://ra1ning.github.io/2016/12/23/git常用命令/">
+     data-url="https://ra1ning.github.io/2016/12/23/webpack-小结/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -507,8 +516,8 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/23/git常用命令/"
-           data-title="git常用命令" data-url="https://ra1ning.github.io/2016/12/23/git常用命令/">
+      <div class="ds-thread" data-thread-key="2016/12/23/webpack-小结/"
+           data-title="webpack 小结" data-url="https://ra1ning.github.io/2016/12/23/webpack-小结/">
       </div>
     
   </div>
@@ -625,7 +634,7 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#添加文件到Git仓库"><span class="nav-number">1.</span> <span class="nav-text">添加文件到Git仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git常用命令"><span class="nav-number">2.</span> <span class="nav-text">git常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将本地文件推送到-github"><span class="nav-number">3.</span> <span class="nav-text">将本地文件推送到 github</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#webpack小结"><span class="nav-number">1.</span> <span class="nav-text">webpack小结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#webpack中容易犯的错误"><span class="nav-number">2.</span> <span class="nav-text">webpack中容易犯的错误</span></a></li></ol></div>
             
 
           </div>
