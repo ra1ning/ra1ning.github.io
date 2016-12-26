@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.mask{
+			position: absolute;
+			background-color: orange;
+			opacity: 0.5;
+			height: 100%;
+			width:100%;
+			border: solid 2px #000;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+
+		img{
+			display: block;
+			
+		}
+
+		td{
+			position: relative;
+		}
+
+	</style>
+</head>
+<body>
+	<p style="margin: 0 auto;width: 600px;text-align: center;color: red;font-size: 20px">抽奖九宫格,可控制中奖概率与次数,打开控制台可查看中奖概率</p><br>
+
+	<p style="margin: 0 auto;width: 600px;text-align: center;color: red;font-size: 20px"><a href="http://ra1ning.github.io/">返回博客</a></p><br>
+	<div style="margin: 0 auto;width: 600px">
+		<table class="lottery">
+			<tr>
+				<td class='lottery1' >
+					<div class="mask"></div>
+					<img src="http://oimy29npf.bkt.clouddn.com/1.jpg" alt=""></img>
+
+				</td>
+				<td class='lottery2'>
+					<div class="mask"></div>
+					<img src="http://oimy29npf.bkt.clouddn.com/2.jpg" alt=""></img>
+				</td>
+				<td class='lottery3'>
+					<div class="mask"></div>
+					<img src="http://oimy29npf.bkt.clouddn.com/3.jpg" alt=""></img>
+				</td>
+			</tr>
+			<tr>
+				<td class='lottery8'>
+					<div class="mask"></div>
+					<img src="http://oimy29npf.bkt.clouddn.com/8.jpg" alt=""></img>
+				</td>
+				<td class='xx'>
+					<div class="mask"></div>
+					<img src="http://oimy29npf.bkt.clouddn.com/xx.jpg" alt=""></img>
+				</td>
+				<td class='lottery4'>
+					<div class="mask"></div>
+					<img src="http://oimy29npf.bkt.clouddn.com/4.jpg" alt=""></img>
+				</td>
+			</tr>
+			<tr>
+				<td class='lottery7'>
+					<div class="mask"></div>
+					<img src="http://oimy29npf.bkt.clouddn.com/7.jpg" alt=""></img>
+				</td>
+				<td class='lottery6'>
+					<div class="mask"></div>
+					<img src="http://oimy29npf.bkt.clouddn.com/6.jpg" alt=""></img>
+				</td>
+				<td class='lottery5'>
+					<div class="mask"></div>
+					<img src="http://oimy29npf.bkt.clouddn.com/5.jpg" alt=""></img>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<script src="jquery.js"></script>
+	<script>
+
+				var arr = [];
+
+		for (var i = 1; i < 9; i++) {
+
+			arr.push($('.lottery' + i));
+
+		}
+
+		var j = 0;
+
+		var time = 10;
+
+		var flag = 0;
+
+		var end = true;
+
+		var sum = {
+			totle: 0,
+			count: []
+		};
+
+
+		for (var i = 0; i < 8; i++) {
+
+			sum.count[i] = 0;
+		}
+
+
+
+		function getNum() {
+
+			var rNum = Math.random() * 100;
+
+			rNum = Math.round(rNum);
+
+			return rNum;
+		}
+
+
+		function domove() {
+
+			arr[j].find('.mask').show().addClass('on');
+
+
+			if (j == 0) {
+
+				arr[7].find('.mask').hide().removeClass('on');
+
+			} else if (arr[j - 1]) {
+
+				arr[j - 1].find('.mask').hide().removeClass('on');
+
+			}
+
+			j++;
+
+			if (j > 7) {
+
+				j = 0;
+			}
+
+		}
+
+		function roll(iTimer, gl) {
+
+			clearInterval(iTimer);
+
+			sum.totle++;
+
+			sum.count[j - 1]++;
+
+			end = true;
+
+			alert("你抽中了第" + (j - 1) + "个🎁")
+
+			console.log("目前共抽奖" + sum.totle + "次" + '，其中' + "第" + (j - 1) + "个🎁中了" + sum.count[j - 1] + "次" + "，其目前中奖率为" + parseInt((sum.count[j - 1] / sum.totle) * 100) + "%" + "其预计中奖率为" + gl)
+
+			//domove()后j++,所以此处要减1，才是真正选中的奖品在数组中的序列；
+		}
+
+
+		function move() {
+
+			var rNum = getNum();
+
+			var timer = setTimeout(function() {
+
+				domove();
+
+				time += 20;
+
+				clearTimeout(timer);
+
+				move();
+
+			}, time)
+
+
+			if (time > 400) {
+
+				clearTimeout(timer);
+
+				var iTimer = setInterval(function() {
+
+					if (rNum == 0 && flag < 2) { //  1%  大奖，中奖率为1%；只能中两次.
+
+						flag++;
+
+						if (j == 0) {
+							roll(iTimer, "1%");
+							return
+							return
+						}
+
+					} else if (rNum > 0 && rNum <= 20) { //  20%
+
+						if (j == 1) {
+							roll(iTimer, "20%");
+							return
+
+						}
+
+					} else if (rNum > 20 && rNum <= 40) { //  20%
+						if (j == 2) {
+							roll(iTimer, "20%");
+							return
+
+						}
+
+					} else if (rNum > 40 && rNum <= 50) { //  10%
+						if (j == 3) {
+							roll(iTimer, "10%");
+							return
+
+						}
+
+					} else if (rNum > 50 && rNum <= 55) { //  5%
+						if (j == 4) {
+							roll(iTimer, "5%");
+							return
+
+						}
+
+					} else if (rNum > 55 && rNum <= 70) { //  15%
+						if (j == 5) {
+							roll(iTimer, "15%");
+							return
+
+						}
+
+					} else if (rNum > 70 && rNum <= 80) { //  10%
+						if (j == 6) {
+							roll(iTimer, "10%");
+							return
+
+						}
+
+					} else { //  20%
+
+						if (j == 7) {
+							roll(iTimer, "20%");
+							return
+
+						}
+
+					}
+
+					domove(j);
+
+				}, 500);
+
+			}
+
+		}
+
+		$('.xx').click(function() {
+			if (end) {
+				end = false;
+				$('.on').hide();
+				time = 10;
+				j = 0;
+				move()
+			}
+		});
+
+
+		// setInterval(function(){
+		// 	$('.xx').click()
+		// },600)
+		
+		
+		
+	</script>
+</body>
+</html>
