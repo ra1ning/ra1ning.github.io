@@ -1,0 +1,654 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"removeChild"
+			],
+			[
+				"c",
+				"code\tTag"
+			],
+			[
+				"sp",
+				"sprit"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"inline",
+				"inline"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"mar",
+				"marginTop"
+			],
+			[
+				"so",
+				"sourseE"
+			],
+			[
+				"onmo",
+				"onmouseout"
+			],
+			[
+				"o",
+				"oUl"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"on",
+				"on"
+			],
+			[
+				"ma",
+				"marginLeft"
+			],
+			[
+				"marg",
+				"marginLeft"
+			],
+			[
+				"get",
+				"getStyle"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"set",
+				"setInterval"
+			],
+			[
+				"chil",
+				"children"
+			],
+			[
+				"remove",
+				"removeChild"
+			],
+			[
+				"child",
+				"childNodes"
+			],
+			[
+				"So",
+				"sourseE"
+			],
+			[
+				"ct",
+				"ct2"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"fla",
+				"float"
+			],
+			[
+				"l-",
+				"line-height"
+			],
+			[
+				"backc",
+				"background-color"
+			],
+			[
+				"texta",
+				"text-align"
+			],
+			[
+				"g",
+				"rgba()"
+			],
+			[
+				"1p",
+				"1px"
+			],
+			[
+				"bacc",
+				"background-color"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"bot",
+				"border-top"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"boder",
+				"border"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
+				"bore",
+				"border"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"me",
+				"meta\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"the",
+				"Package Control: Add Channel"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ra1n/GitHub/淘宝主页/index.html",
+		"/Users/ra1n/GitHub/淘宝主页/style.css",
+		"/Users/ra1n/GitHub/淘宝主页/untitled.js",
+		"/Users/ra1n/GitHub/淘宝主页/untitled.html",
+		"/Users/ra1n/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/Users/ra1n/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/ra1n/GitHub/淘宝主页/js/main.js",
+		"/Users/ra1n/Library/Application Support/Sublime Text 3/Packages/Tagify/Tagify.sublime-settings",
+		"/Users/ra1n/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/Default (OSX).sublime-keymap",
+		"/Users/ra1n/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/ra1n/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/ra1n/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/ra1n/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/ra1n/GitHub/淘宝主页/demo.html",
+		"/Users/ra1n/Desktop/untitled.html",
+		"/Users/ra1n/Desktop/洼地.htm",
+		"/Users/ra1n/Desktop/untitledad.html",
+		"/Users/ra1n/GitHub/淘宝主页/FireShot Capture 002 - 淘宝网 - 淘！我喜欢 - https___www.taobao.com_.png",
+		"/Users/ra1n/GitHub/淘宝主页无缝轮播图/淘宝主页无缝轮播图.html",
+		"/Users/ra1n/Desktop/CSS3淘宝右侧固定导航代码 2/css/index-min.css",
+		"/Users/ra1n/Desktop/未命名.rtf",
+		"/Users/ra1n/GitHub/淘宝主页/自己实现的图片首尾无缝轮播的一种实现方法.html",
+		"/Users/ra1n/GitHub/淘宝主页/淘宝主页图片首尾无缝轮播规范方法.html",
+		"/Users/ra1n/GitHub/淘宝主页无缝轮播图/untitled",
+		"/Users/ra1n/GitHub/淘宝主页/unt.html",
+		"/Users/ra1n/GitHub/淘宝主页/untitled.htm",
+		"/Users/ra1n/GitHub/淘宝主页/dfg.html",
+		"/Users/ra1n/Desktop/unt.html",
+		"/Users/ra1n/GitHub/淘宝主页/images/sprit.mkm",
+		"/Users/ra1n/Desktop/ad.html",
+		"/Users/ra1n/GitHub/淘宝主页/index副本.html",
+		"/Users/ra1n/Desktop/component.html",
+		"/Users/ra1n/Desktop/aaauntitled.html",
+		"/Users/ra1n/Desktop/CHMView2.4.0/untitled.html",
+		"/Users/ra1n/Desktop/CHMView2.4.0/untitled",
+		"/Users/ra1n/Desktop/aduntitled.html",
+		"/Users/ra1n/Documents/美国日韩/观看说明.txt",
+		"/Users/ra1n/GitHub/淘宝主页/未命名文件夹/仿淘宝主页组件化探索.html",
+		"/Users/ra1n/GitHub/code/demo.js",
+		"/Users/ra1n/GitHub/淘宝主页/未命名文件夹/css/font-awesome.min.css",
+		"/Users/ra1n/Desktop/float.html",
+		"/Users/ra1n/GitHub/淘宝主页/css/style.css",
+		"/Users/ra1n/GitHub/淘宝主页/juzhong",
+		"/Users/ra1n/GitHub/淘宝主页/font-ico/demo.css",
+		"/Users/ra1n/Downloads/aria2c_file/aria2.conf",
+		"/Users/ra1n/Desktop/da.js",
+		"/Users/ra1n/ddmm.js（对象__proto__指向其构造函数的原型对象）",
+		"/Users/ra1n/Downloads/react-demos-master/demo10/index.html",
+		"/Volumes/前端/笔记/react代码分析/隔壁为本文件参考信息.html",
+		"/Users/ra1n/Desktop/index副本.html",
+		"/Volumes/前端/笔记/（对象__proto__指向其构造函数的原型对象）ddmm.js",
+		"/Users/ra1n/Desktop/ddmm.js",
+		"/Users/ra1n/Desktop/demo.js",
+		"/Users/ra1n/Downloads/react-demos-master/demo08/index.html",
+		"/Users/ra1n/Desktop/ReactDemo.html",
+		"/Users/ra1n/Desktop/runing.js",
+		"/Users/ra1n/GitHub/图片轮播/css/main.css",
+		"/Users/ra1n/GitHub/图片轮播/图片轮播.html",
+		"/Users/ra1n/GitHub/图片轮播/main.js",
+		"/Users/ra1n/GitHub/图片轮播/main.css",
+		"/Users/ra1n/GitHub/图片轮播/jquery-2.1.1.min.js",
+		"/Users/ra1n/GitHub/京东主页重构/main.js",
+		"/Users/ra1n/GitHub/Untitled.html",
+		"/Users/ra1n/GitHub/demo.java",
+		"/Users/ra1n/GitHub/demo.class",
+		"/Users/ra1n/GitHub/ff.js",
+		"/Users/ra1n/GitHub/maina.css",
+		"/Users/ra1n/GitHub/bb.html",
+		"/Users/ra1n/Desktop/demo.html",
+		"/Users/ra1n/GitHub/京东主页/js/main.js",
+		"/Users/ra1n/run.js",
+		"/Users/ra1n/run",
+		"/Users/ra1n/GitHub/filerename.js",
+		"/Users/ra1n/GitHub/gaile.js",
+		"/Volumes/前端/前端/code/爱心鱼/js/ane.js",
+		"/Users/ra1n/GitHub/京东主页/css/main.css",
+		"/Users/ra1n/GitHub/京东主页/css/reset.css",
+		"/Users/ra1n/GitHub/电商网站页面搭建/js/main.js",
+		"/Users/ra1n/GitHub/电商网站页面搭建/style/reset.css",
+		"/Users/ra1n/GitHub/电商网站页面搭建/index.html",
+		"/Users/ra1n/GitHub/电商网站页面搭建/style/main.css",
+		"/Users/ra1n/GitHub/demo/Untitled.html",
+		"/Users/ra1n/GitHub/fuwu.js",
+		"/Users/ra1n/AndroidStudioProjects/MyApplication/app/src/test/java/com/example/ra1n/myapplication/ExampleUnitTest.java",
+		"/Users/ra1n/Downloads/CV_Attach_Read (1).php",
+		"/Users/ra1n/Downloads/CV_Attach_Read.php",
+		"/Users/ra1n/Desktop/main.js",
+		"/Users/ra1n/Desktop/haha.js",
+		"/Users/ra1n/Desktop/math.js",
+		"/Users/ra1n/Downloads/53d5a06000015c9800000000/css/main.css",
+		"/Users/ra1n/Downloads/53d5a06000015c9800000000/index.html",
+		"/Volumes/前端/code/爱心鱼.rar.baiduyun.uploading.cfg",
+		"/Users/ra1n/Desktop/P元素长度问题.html",
+		"/Users/ra1n/Desktop/父元素浮动.html",
+		"/Users/ra1n/Desktop/U???.html",
+		"/Users/ra1n/Desktop/企业网站/js/main.js",
+		"/Users/ra1n/Desktop/myfocus-2.0.1.full.js",
+		"/Users/ra1n/code/企业网站/style/style.css",
+		"/Volumes/前端/企业网站开发/index.html",
+		"/Volumes/前端/企业网站开发/style/main.css",
+		"/Users/ra1n/Desktop/Untitled.html",
+		"/Volumes/前端/code/爱心鱼/js/commonFunctions.js",
+		"/Users/ra1n/code/函数执行调用函数.html"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"span",
+			"sp",
+			"spr",
+			"；",
+			";",
+			"type",
+			"padding",
+			"<div style=\"margin-top: 18px;border:1px solid pink;height: 30px\"></div>",
+			"<div style=\"background-color: #ddd;height: 248px;width: 100px;",
+			".better-goods li",
+			"wrap-bottom-right",
+			"wrap-bottom-right div",
+			"wrap-bottom-right div div",
+			"better-goods",
+			"iconfont",
+			"nth-child",
+			"better-goods",
+			"sprit",
+			"10px",
+			"hot-news",
+			"#box",
+			"＃bo x",
+			".hot-news ul",
+			"hot-news",
+			"200",
+			"200px",
+			"520",
+			"520px",
+			"alert",
+			"200",
+			"\"banner2",
+			"ul",
+			"banner2",
+			"banner1",
+			"hot-news",
+			"img",
+			"oUl",
+			"getStyle",
+			"box",
+			"#",
+			"#next",
+			"#box",
+			"c=\"",
+			"banner1",
+			".banner1",
+			"index",
+			"on",
+			"255",
+			"images",
+			"\"im",
+			"\"img",
+			"img",
+			"banner1",
+			"hot-news",
+			"h2",
+			".wrap-bottom>*",
+			"wrap-bottom",
+			"wrap",
+			"chb",
+			"t2.",
+			"b1",
+			"chb1",
+			"cb21",
+			"ct2.jpg",
+			"ct2",
+			"t3",
+			"t2",
+			"b8",
+			"b81",
+			".pn",
+			"t1",
+			"t3",
+			"t2",
+			".png",
+			"t1",
+			"t4",
+			"t2",
+			"png",
+			"tb",
+			"t4",
+			"t41",
+			"q11",
+			"t2",
+			"rstuvw xyz",
+			".fashion .component:nth-of-type(2) .component1:nth-of-type(",
+			".fashion .component:nth-of-type(2) .component1:nth-of-type(1)",
+			"component",
+			"10px",
+			".wrap-bottom>*",
+			"component",
+			"1",
+			".fashion .component:nth-of-type(4) .component1:nth-of-type(1)",
+			"wrap-bottom",
+			"fashion",
+			"fashion clearfix",
+			"'",
+			"clearfix",
+			"fashion",
+			"class=\"fashion",
+			"fashion\n",
+			"{\n",
+			".fashion .component:nth-of-type(4) .component1:nth-of-type(1)",
+			"clear",
+			"clearfix",
+			"/l",
+			"li",
+			"yellow",
+			"yelloe",
+			"890px",
+			"890",
+			"0.5",
+			"component",
+			".favorite>*",
+			".favorite",
+			".favorate",
+			"top-title",
+			"es/3",
+			"/",
+			"31",
+			"f7",
+			"png",
+			"n",
+			"f7",
+			"jpg",
+			"7.j",
+			"fashion",
+			"top-right",
+			"top"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"hot-news ul",
+			"花落知道少",
+			"fashion",
+			"<a href=\"#\"><img src=\"images/f"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "main.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
