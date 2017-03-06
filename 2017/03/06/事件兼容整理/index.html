@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="project," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,16 +84,25 @@
 
 
 
-<meta name="description" content="做了一个静态淘宝主页,练练 css,点击这里查看效果">
+<meta name="description" content="事件兼容整理以前对 dom 事件兼容方面的知识一直是懵懵懂懂,今天抽空把这些知识点做了一次梳理,以免后患
+event 对象
+chrome 和 ie 都支持全局event对象,即在事件函数中可直接调用 event 对象,当然这种写法不符合 w3c标准
+123el.onclick=function ()&amp;#123;		alert(event)	//chrome 和 ie 下弹出clickevent">
 <meta property="og:type" content="article">
-<meta property="og:title" content="淘宝主页">
-<meta property="og:url" content="https://ra1ning.github.io/2016/12/31/淘宝主页/index.html">
+<meta property="og:title" content="事件兼容整理">
+<meta property="og:url" content="https://ra1ning.github.io/2017/03/06/事件兼容整理/index.html">
 <meta property="og:site_name" content="Else's Blog">
-<meta property="og:description" content="做了一个静态淘宝主页,练练 css,点击这里查看效果">
-<meta property="og:updated_time" content="2016-12-30T16:50:17.000Z">
+<meta property="og:description" content="事件兼容整理以前对 dom 事件兼容方面的知识一直是懵懵懂懂,今天抽空把这些知识点做了一次梳理,以免后患
+event 对象
+chrome 和 ie 都支持全局event对象,即在事件函数中可直接调用 event 对象,当然这种写法不符合 w3c标准
+123el.onclick=function ()&amp;#123;		alert(event)	//chrome 和 ie 下弹出clickevent">
+<meta property="og:updated_time" content="2017-03-06T13:43:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="淘宝主页">
-<meta name="twitter:description" content="做了一个静态淘宝主页,练练 css,点击这里查看效果">
+<meta name="twitter:title" content="事件兼容整理">
+<meta name="twitter:description" content="事件兼容整理以前对 dom 事件兼容方面的知识一直是懵懵懂懂,今天抽空把这些知识点做了一次梳理,以免后患
+event 对象
+chrome 和 ie 都支持全局event对象,即在事件函数中可直接调用 event 对象,当然这种写法不符合 w3c标准
+123el.onclick=function ()&amp;#123;		alert(event)	//chrome 和 ie 下弹出clickevent">
 
 
 
@@ -121,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://ra1ning.github.io/2016/12/31/淘宝主页/"/>
+  <link rel="canonical" href="https://ra1ning.github.io/2017/03/06/事件兼容整理/"/>
 
 
 
 
 
-  <title> 淘宝主页 | Else's Blog </title>
+  <title> 事件兼容整理 | Else's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -258,7 +267,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://ra1ning.github.io/2016/12/31/淘宝主页/">
+  <link itemprop="mainEntityOfPage" href="https://ra1ning.github.io/2017/03/06/事件兼容整理/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Else">
@@ -282,7 +291,7 @@
             
             
               
-                淘宝主页
+                事件兼容整理
               
             
           </h1>
@@ -295,8 +304,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-31T00:46:24+08:00">
-                2016-12-31
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-06T21:39:19+08:00">
+                2017-03-06
               </time>
             
 
@@ -314,8 +323,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/project/" itemprop="url" rel="index">
-                    <span itemprop="name">project</span>
+                  <a href="/categories/js-基础/" itemprop="url" rel="index">
+                    <span itemprop="name">js 基础</span>
                   </a>
                 </span>
 
@@ -329,8 +338,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/12/31/淘宝主页/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/31/淘宝主页/" itemprop="commentCount"></span>
+                <a href="/2017/03/06/事件兼容整理/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/06/事件兼容整理/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -361,7 +370,25 @@
       
 
       
-        <p>做了一个静态淘宝主页,练练 css,点击<a href="https://ra1ning.github.io/project/taobao/index.html">这里</a>查看效果</p>
+        <h1 id="事件兼容整理"><a href="#事件兼容整理" class="headerlink" title="事件兼容整理"></a>事件兼容整理</h1><p>以前对 dom 事件兼容方面的知识一直是懵懵懂懂,今天抽空把这些知识点做了一次梳理,以免后患</p>
+<h2 id="event-对象"><a href="#event-对象" class="headerlink" title="event 对象"></a>event 对象</h2><ul>
+<li><p>chrome 和 ie 都支持全局event对象,即在事件函数中可直接调用 event 对象,当然这种写法不符合 w3c标准</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">el.onclick=function ()&#123;</div><div class="line">		alert(event)	//chrome 和 ie 下弹出clickevent  ,火狐下回报错</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>火狐只支持标准的事件对象写法,即在事件函数中的第一个参数为事件对象,chrome 与标准 ie 也支持此种写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">el.onclick=function (e)&#123;</div><div class="line">		alert(e) // 弹出 clickevent</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>所以如果需要兼容低版本 ie 就需要作兼容处理,否则可以采用标准写法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">el.onclick=function (e)&#123;</div><div class="line">		var ev=e||event</div><div class="line">		alert(ev)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="事件绑定方式"><a href="#事件绑定方式" class="headerlink" title="事件绑定方式"></a>事件绑定方式</h2><p>如果对象的一个事件需要绑定两个事件函数,上面的方法就不适用了,因为上面的这种写法会产生覆盖问题,此时就需要使用第二种事件绑定方法了,即 addEventListener||attachEvent</p>
+<ul>
+<li>addEventListener:此方法是标准的事件绑定方法,使用方法为element.addEventListener(event, function, useCapture),参数列表中,第一个参数为要给element对象添加的事件类型,要注意的是事件的名字前面没有”on”,第二个参数为事件函数,第三个参数决定事件在捕获还是冒泡阶段执行,默认为 false 即事件在冒泡阶段执行,如果设为 true 则事件在捕获阶段执行.<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">el.addEventListener(&quot;click&quot;, fn)</div><div class="line">function fn()&#123;</div><div class="line">		alert(this)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>attachEvent:此方法只在 ie 下可用(ie11好像不支持而回归标准addEventListener了),使用方法为attachEvent(event, listener),第一个参数为要添加的事件类型,第二个参数为事件函数,与 addEventListener 不同的是事件类型名字前需要添加”on”,比较坑爹的是事件函数中this指向的的对象为 window 所以在事件函数中需要用 call 处理 this 指向.<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">el.attachEvent(“onclick”,function()&#123;</div><div class="line">		fn.call( el )</div><div class="line">&#125;)</div><div class="line"></div><div class="line">function fn()&#123;</div><div class="line">		alert( this )</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -404,19 +431,13 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/project/" rel="tag"># project</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/27/费马原理/" rel="next" title="费马原理">
-                <i class="fa fa-chevron-left"></i> 费马原理
+              <a href="/2017/01/02/js 参数引用类型/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
               </a>
             
           </div>
@@ -424,10 +445,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/02/js 参数引用类型/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -442,10 +459,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/12/31/淘宝主页/"
-     data-title="淘宝主页"
+        <div class="ds-share flat" data-thread-key="2017/03/06/事件兼容整理/"
+     data-title="事件兼容整理"
      data-content=""
-     data-url="https://ra1ning.github.io/2016/12/31/淘宝主页/">
+     data-url="https://ra1ning.github.io/2017/03/06/事件兼容整理/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -472,8 +489,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/31/淘宝主页/"
-           data-title="淘宝主页" data-url="https://ra1ning.github.io/2016/12/31/淘宝主页/">
+      <div class="ds-thread" data-thread-key="2017/03/06/事件兼容整理/"
+           data-title="事件兼容整理" data-url="https://ra1ning.github.io/2017/03/06/事件兼容整理/">
       </div>
     
   </div>
@@ -497,8 +514,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/logo.jpg"
@@ -571,6 +597,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#事件兼容整理"><span class="nav-number">1.</span> <span class="nav-text">事件兼容整理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#event-对象"><span class="nav-number">1.1.</span> <span class="nav-text">event 对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件绑定方式"><span class="nav-number">1.2.</span> <span class="nav-text">事件绑定方式</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
