@@ -82,9 +82,9 @@
 
 	</style>
 	<script src="./three.js"></script>
-	<script src="./CellCube.js"></script>
+	<script src="./cellCube.js"></script>
 	<script src="./RussianCube.js"></script>
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
 </head>
 <body>
 	<div id="canvas"></div>
@@ -189,10 +189,45 @@
 			}
 		}
 
+		document.addEventListener('touchstart',function(e){
+			var radius = Math.pow(camera.position.x,2)+Math.pow(camera.position.y,2)+Math.pow(camera.position.z,2)
+			var startX= 0,startY= 0
+			document.addEventListener('touchmove',function(e){
+				if(e.clientX-startX>0){
+					oCantainer.rotation.y += 0.08
+					newoCan.rotation.y += 0.08	
+				}else if(e.clientX-startX<0){
+					oCantainer.rotation.y -= 0.08
+					newoCan.rotation.y -= 0.08
+				}
+				if(e.clientY-startY>0){
+					camera.position.y+=0.6
+					if(radius-Math.pow(camera.position.y,2)<1){
+						camera.position.y=Math.pow((radius-1),0.5)
+					}
+					camera.position.x=Math.pow((radius-Math.pow(camera.position.y,2))/2,0.5)
+					camera.position.z=Math.pow((radius-Math.pow(camera.position.y,2))/2,0.5)
+					camera.lookAt(new THREE.Vector3(0,0,0))
+				}else if(e.clientY-startY<0){
+					camera.position.y-=0.6
+					if(Math.pow(camera.position.y,2)<1){
+						camera.position.y=1
+					}
+					camera.position.x=Math.pow((radius-Math.pow(camera.position.y,2))/2,1/2)
+					camera.position.z=Math.pow((radius-Math.pow(camera.position.y,2))/2,1/2)
+					camera.lookAt(new THREE.Vector3(0,0,0))
+				}
+
+				startX = e.clientX
+				startY = e.clientY
+			})
+			document.addEventListener('touchend',function(e){
+				document.removeEventListener('touchmove')
+			})
+		})
 		arr.forEach(function(el,index){
 
 			el.onclick = function(e){
-				alert(123,oCantainer)
 				e.key=keys[index]
 				russianCube.moveCtrl(e)
 			}
