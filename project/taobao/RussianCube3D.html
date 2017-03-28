@@ -99,6 +99,7 @@
 			<div id="fn">
 				<div id="pause">暂停</div>
 				<div id="cast">投影</div>
+				<div id="acce">加速</div>
 			</div>
 			<div id="transform">
 				<div id="across"></div>
@@ -109,9 +110,8 @@
 		
 	</div>
 	<script>
-		// var document.querySelector = document.querySelector("#12ad")
-		var arr=  [document.querySelector("#left"),document.querySelector("#right"),document.querySelector("#top"),document.querySelector("#bottom"),document.querySelector("#pause"),document.querySelector("#cast"),document.querySelector("#across"),document.querySelector("#row"),document.querySelector("#vertical")],
-		keys = ["a","d","w","s","8","7","1","2","3"]
+		var arr=  [document.querySelector("#left"),document.querySelector("#right"),document.querySelector("#top"),document.querySelector("#bottom"),document.querySelector("#pause"),document.querySelector("#cast"),document.querySelector("#across"),document.querySelector("#row"),document.querySelector("#vertical"),document.querySelector("#acce")],
+		keys = ["a","d","w","s","8","7","1","2","3","Enter"]
 		var oLeft=arr[0],oRight=arr[1],oTop=arr[2],oBottom=arr[3],oPause=arr[4],oCast=arr[5],oTrans1=arr[6],oTrans2=arr[7],oTrans3=arr[8]
 		document.body.style.height=window.innerHeight+"px"
 		// 创建场景
@@ -192,15 +192,15 @@
 		document.addEventListener('touchstart',function(e){
 			var radius = Math.pow(camera.position.x,2)+Math.pow(camera.position.y,2)+Math.pow(camera.position.z,2)
 			var startX= 0,startY= 0
-			document.addEventListener('touchmove',function(e){
-				if(e.clientX-startX>0){
+			function move(e){
+				if(e.touches[0].clientX-startX>0){
 					oCantainer.rotation.y += 0.08
 					newoCan.rotation.y += 0.08	
-				}else if(e.clientX-startX<0){
+				}else if(e.touches[0].clientX-startX<0){
 					oCantainer.rotation.y -= 0.08
 					newoCan.rotation.y -= 0.08
 				}
-				if(e.clientY-startY>0){
+				if(e.touches[0].clientY-startY>0){
 					camera.position.y+=0.6
 					if(radius-Math.pow(camera.position.y,2)<1){
 						camera.position.y=Math.pow((radius-1),0.5)
@@ -208,7 +208,7 @@
 					camera.position.x=Math.pow((radius-Math.pow(camera.position.y,2))/2,0.5)
 					camera.position.z=Math.pow((radius-Math.pow(camera.position.y,2))/2,0.5)
 					camera.lookAt(new THREE.Vector3(0,0,0))
-				}else if(e.clientY-startY<0){
+				}else if(e.touches[0].clientY-startY<0){
 					camera.position.y-=0.6
 					if(Math.pow(camera.position.y,2)<1){
 						camera.position.y=1
@@ -218,11 +218,12 @@
 					camera.lookAt(new THREE.Vector3(0,0,0))
 				}
 
-				startX = e.clientX
-				startY = e.clientY
-			})
+				startX = e.touches[0].clientX
+				startY = e.touches[0].clientY
+			}
+			document.addEventListener('touchmove',move)
 			document.addEventListener('touchend',function(e){
-				document.removeEventListener('touchmove')
+				document.removeEventListener('touchmove',move)
 			})
 		})
 		arr.forEach(function(el,index){
