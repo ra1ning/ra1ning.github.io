@@ -257,7 +257,7 @@
 		scene.add(camera,oCantainer,newoCan,light)
 
 		// 创建渲染器
-		var renderer = new THREE.WebGLRenderer()
+		var renderer = new THREE.WebGLRenderer({ antialias: true })
 		renderer.setSize(window.innerWidth, window.innerHeight*0.72)
 		renderer.setClearColor(0x33a3dc,0.5);  
 
