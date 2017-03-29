@@ -262,7 +262,8 @@
 		renderer.setClearColor(0x33a3dc,0.5);  
 
 		// 渲染
-		document.querySelector("#canvas").append(renderer.domElement)
+		var canvas = document.querySelector("#canvas");
+		canvas.append(renderer.domElement)
 
 		function render(){
 				requestAnimationFrame(render)
